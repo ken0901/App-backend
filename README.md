@@ -2,12 +2,16 @@
 Springboot - Angular - Full-Stack-App
 
 ## Functions
-* 
+* User sign up
+* User verify with token
+* Cutermized exception ( ex) Invalid username, token etc)
 
 ## Skills
 * Java 1.8 version
 * Spring framework, Spring boot
 * Spring data JPA, hibernate
+* Spring Security
+* JavaMailSender ( send an email) , test with mailtrap.io
 
 
 ## frontend github address
