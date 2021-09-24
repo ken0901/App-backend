@@ -1,5 +1,7 @@
 package com.ken.app.controller;
 
+import com.ken.app.dto.AuthenticationResponse;
+import com.ken.app.dto.LoginRequest;
 import com.ken.app.dto.RegisterRequest;
 import com.ken.app.service.AuthService;
 import lombok.AllArgsConstructor;
@@ -24,5 +26,10 @@ public class AuthController {
     public ResponseEntity<String> verifyAccount(@PathVariable String token){
         authService.verifyAccount(token);
         return new ResponseEntity<>("Account Activated Successfully",HttpStatus.OK);
+    }
+
+    @PostMapping("/login")
+    public AuthenticationResponse login(@RequestBody LoginRequest loginRequest){
+        return authService.login(loginRequest);
     }
 }
